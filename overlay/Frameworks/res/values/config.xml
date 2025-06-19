@@ -323,4 +323,17 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+
+    <!-- A string config in svg path format for the main display shape.
+         (@see https://www.w3.org/TR/SVG/paths.html#PathData).
+
+         This config must be set unless:
+         1. {@link Configuration#isScreenRound} is true which means the display shape is circular
+            and the system will auto-generate a circular shape.
+         2. The display has no rounded corner and the system will auto-generate a rectangular shape.
+         (@see DisplayShape#createDefaultDisplayShape)
+
+         Note: If the display supports multiple resolutions, please define the path config based on
+         the highest resolution so that it can be scaled correctly in each resolution. -->
+    <string name="config_mainDisplayShape" translatable="false">M132,1.1c-51,3.5 -81.8,16.9 -103.1,45.1 -16.9,22.5 -25.2,49.8 -27.9,91.8l-1.1,16.5 0.3,1062.5 0.4,1062.5 1.7,11.5c8.1,53.2 27.8,81.3 67.9,97.1 14,5.5 35.9,9.2 64.3,10.9l17,1 388.5,-0 388.5,-0 17,-1c28.4,-1.7 50.3,-5.4 64.3,-10.9 40.1,-15.8 59.8,-43.9 67.9,-97.1l1.7,-11.5 0.4,-1062.5 0.3,-1062.5 -1.1,-16.5c-2.7,-42 -11,-69.3 -27.9,-91.8 -10.4,-13.8 -21.8,-22.9 -38.5,-30.8 -14.3,-6.7 -28.3,-10.3 -53.1,-13.6l-9,-1.2 -403,-0.1c-221.6,-0.1 -408.6,0.1 -415.5,0.6z</string>
 </resources>
