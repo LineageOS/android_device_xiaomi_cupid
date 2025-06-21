@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "29c1db8d_5ec1b57a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-06-21T10:58:48Z",
+      "side": 1,
+      "message": "our proximity sensor is unfortunately not suitable to be used at all since it does not work if the device is not upright. Thus, use xiaomis pocket sensor instead: I3df8e2513e574bcd079d18eeb3380c003780e69a",
+      "revId": "362b4564e962b768b8d23743ab9918f1164e5d0d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
